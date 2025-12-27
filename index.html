@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Mohamed Talibi - Developpeur Web
+    </title>
+
+    <!-- Bootstrap css / icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Font awesom -->
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+
+                <!-- BRAND -->
+                <a class="navbar-brand d-flex align-items-center" href="">
+                    <h3>mohamed.talibi</h3>
+                </a>
+
+                <!-- HAMBURGER / TOGGLER (Mobile) -->
+                <button class="navbar-toggler custom-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <!-- DESKTOP LINKS -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav align-items-center gap-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link activated" href="">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Mes Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Mes Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🔵 OFFCANVAS MENU (Mobile + Tablet) -->
+        <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h3>talibi.mohamed</h3>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-start gap-3">
+                    <li><a class="nav-link activated" href="" data-bs-dismiss="offcanvas">Accueil</a></li>
+                    <li><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">À propos</a></li>
+                    <li><a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Mes Services</a></li>
+                    <li><a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">Mes Projets</a></li>
+                    <li><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <section id="hero" class="hero py-5 pb-4">
+            <div class="container-fluid">
+                <div class="hero-content row justify-content-center align-items-center g-3">
+
+                    <!-- Hero text -->
+                    <div class="col-md-6 col-lg-5">
+                        <div class="hero-text">
+                            <span>
+                                <i class="fa-solid fa-user-tie"></i>
+                                Votre partenaire en croissance digitale
+                            </span>
+                            <h1>
+                                Développeur web & designer Canva pour booster votre présence en ligne
+                            </h1>
+                            <p>
+                                J’accompagne les entrepreneurs, marques et entreprises dans la création de 
+                                <strong>sites web modernes</strong>, de <strong>landing pages performantes</strong> 
+                                et de <strong>designs visuels professionnels</strong> pour les réseaux sociaux.
+                                Mon objectif : transformer vos visiteurs en clients grâce à une expérience 
+                                claire, rapide et impactante.
+                            </p>
+                            <div class="links d-flex gap-2">
+                                <a href="#contact" class="btn main-btn">
+                                    Me contacter
+                                </a>
+                                <a href="#projects" class="btn secondary-btn">
+                                    <i class="fa-solid fa-list-check me-2"></i>
+                                    Voir mes projets
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero image -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="grid-images">
+                            <div class="grid-img i1" loading="lazy"></div>
+                            <div class="grid-img i2" loading="lazy"></div>
+                            <div class="grid-img i3" loading="lazy"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /end hero section -->
+
+        <!-- About section -->
+        <section id="about" class="about py-5 pb-5">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center g-5">
+                    <!-- About text -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="about-text">
+                            <span>À propos de moi</span>
+                            <h2 class="main-title">Mohamed Talibi / Développeur Web</h2>
+                            <h2 class="secondary-title">Mohamed Talibi / Designer Canva</h2>
+
+                            <p class="main-description">
+                            Je suis Mohamed Talibi, développeur web passionné et créatif, spécialisé dans la création de sites internet modernes, performants et optimisés pour le référencement naturel (SEO). Je combine mes compétences en développement et en design pour offrir des expériences numériques uniques et intuitives adaptées aux besoins de mes clients.
+                            </p>
+                            <p class="secondary-description">
+                            En tant que designer Canva, je conçois des visuels professionnels et attractifs pour les marques et entreprises. Mes créations incluent des designs pour les réseaux sociaux, des présentations, des supports marketing et des templates personnalisés, alliant esthétique et fonctionnalité pour un impact maximal.
+                            </p>
+
+                            <!-- Fields of Work -->
+                            <div class="fields-of-work">
+                                <div class="fields-track">
+                                    <div class="item">Entrepreneurs</div>
+                                    <div class="item">Startups</div>
+                                    <div class="item">Petites entreprises</div>
+                                    <div class="item">Boutiques en ligne</div>
+                                    <div class="item">Marques personnelles</div>
+                                    <div class="item">Créateurs de contenu</div>
+                                    <div class="item">Agences</div>
+                                    <div class="item">Restaurants</div>
+                                    <div class="item">Immobilier</div>
+                                    <!-- Duplicates -->
+                                    <div class="item">Entrepreneurs</div>
+                                    <div class="item">Startups</div>
+                                    <div class="item">Petites entreprises</div>
+                                    <div class="item">Boutiques en ligne</div>
+                                    <div class="item">Marques personnelles</div>
+                                    <div class="item">Créateurs de contenu</div>
+                                    <div class="item">Agences</div>
+                                    <div class="item">Restaurants</div>
+                                    <div class="item">Immobilier</div>
+                                </div>
+                            </div>
+                            <div class="fields-of-work">
+                                <div class="fields-track-2">
+                                    <div class="item">Pages de destination</div>
+                                    <div class="item">Sites d'entreprise</div>
+                                    <div class="item">Portfolios en ligne</div>
+                                    <div class="item">Boutiques e-commerce</div>
+                                    <div class="item">Projets SaaS</div>
+                                    <div class="item">Produits numériques</div>
+                                    <div class="item">Marques Instagram</div>
+                                    <div class="item">Campagnes marketing</div>
+                                    <div class="item">Templates Canva</div>
+                                    <div class="item">Branding visuel</div>
+                                    <!-- Duplicates -->
+                                    <div class="item">Pages de destination</div>
+                                    <div class="item">Sites d'entreprise</div>
+                                    <div class="item">Portfolios en ligne</div>
+                                    <div class="item">Boutiques e-commerce</div>
+                                    <div class="item">Projets SaaS</div>
+                                    <div class="item">Produits numériques</div>
+                                    <div class="item">Marques Instagram</div>
+                                    <div class="item">Campagnes marketing</div>
+                                    <div class="item">Templates Canva</div>
+                                    <div class="item">Branding visuel</div>
+                                </div>
+                            </div>
+
+                            <!-- Grid Infos (Feature Items) -->
+                            <div class="row g-2 mt-3">
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <h3 class="feature-title">Qui suis-je</h3>
+                                        <p class="feature-desc">Je suis un professionnel du web et du design, dédié à créer une présence digitale forte, esthétique et performante pour mes clients.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <h3 class="feature-title">Ce que je propose</h3>
+                                        <p class="feature-desc">Je développe des sites web personnalisés et conçois des visuels créatifs pour répondre aux besoins spécifiques de chaque projet.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <h3 class="feature-title">Mes réussites</h3>
+                                        <p class="feature-desc">Des projets concrets, livrés avec soin et professionnalisme, qui renforcent la visibilité et la crédibilité des marques.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-item">
+                                        <h3 class="feature-title">Comment je vous aide</h3>
+                                        <p class="feature-desc">Je vous accompagne à chaque étape du projet, du concept initial à la livraison finale, en garantissant qualité, créativité et efficacité.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- About images -->
+                    <div class="col-md-6 col-lg-5">
+                        <div class="about-images">
+                            <img src="imgs/pro-img.jpg" alt="" class="img-fluid main-img">
+                            <img src="imgs/pro-img-2.png" alt="" class="img-fluid secondary-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /end About section -->
+
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+        crossorigin="anonymous"></script>
+    <!-- Loader -->
+    <script src="js/loader.js"></script>
+    <!-- Nav -->
+    <script src="js/nav.js"></script>
+    <!-- SwitchAbout -->
+    <script src="js/switchAbout.js"></script>
+</body>
+</html>
