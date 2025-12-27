@@ -345,6 +345,10 @@ body {
 }
 
 /* About ========================================================================================================================== */
+.about {
+    background-color: var(--light-green);
+}
+
 .about span {
     font-family: var(--font-special);
     text-transform: uppercase;
