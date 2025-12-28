@@ -87,6 +87,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -347,6 +349,7 @@ body {
 /* About ========================================================================================================================== */
 .about {
     background-color: var(--light-green);
+    overflow-x: hidden;
 }
 
 .about span {
@@ -497,6 +500,10 @@ body {
 }
 
 /* Services ====================================================================================================================== */
+.services {
+    /* overflow-x: hidden; */
+}
+
 .services .main-title span {
     font-family: var(--font-special);
     font-size: 25px;
@@ -508,7 +515,6 @@ body {
     font-size: clamp(30px, 45px, 50px);
     color: var(--dark-green);
 }
-
 
 .service-card {
     border: 1px solid transparent;
@@ -576,6 +582,7 @@ body {
 /* Projects ======================================================================================================================= */
 .projects {
     padding: 50px 0;
+    overflow-x: hidden;
 }
 
 .projects-title span {
